@@ -9,7 +9,7 @@
     <Button
         android:id="@+id/button"
         android:layout_width="613dp"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:text="refresh"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,8 +18,8 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="468dp"
-        android:layout_height="100dp"
+        android:layout_width="405dp"
+        android:layout_height="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,7 +27,7 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="613dp"
-        android:layout_height="530dp"
+        android:layout_height="550dp"
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FinalProjectCS125</string>
+
+    <string-array name ="locations">
+        <item>One</item>
+        <item>Two</item>
+    </string-array>
 </resources>

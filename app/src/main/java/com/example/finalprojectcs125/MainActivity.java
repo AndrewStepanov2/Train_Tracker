@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String station = parent.getItemAtPosition(position).toString();
+                // make API request
+                // get info from API request
+                // display the data from API request
                 text.setText(station);
             }
 

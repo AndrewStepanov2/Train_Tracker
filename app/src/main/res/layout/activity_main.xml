@@ -19,7 +19,7 @@
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="405dp"
-        android:layout_height="80dp"
+        android:layout_height="93dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,11 +27,13 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="400dp"
-        android:layout_height="466dp"
+        android:layout_height="478dp"
         android:text="Select Station"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.495" />
 
 </android.support.constraint.ConstraintLayout>

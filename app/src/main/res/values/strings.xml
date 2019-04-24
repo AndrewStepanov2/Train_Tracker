@@ -5,4 +5,10 @@
         <item>One</item>
         <item>Two</item>
     </string-array>
+
+    <string-array name = "results">
+        <item>TrainOne</item>
+        <item>TrainTwo</item>
+        <item>TrainThree</item>
+    </string-array>
 </resources>

@@ -20,17 +20,41 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 public class MainActivity extends AppCompatActivity {
+
+    /** RequestQueue for API calls. */
     private RequestQueue requestQueue;
+
+    /** String to store the results of the API request. */
     private String jsonString;
+
+    /** url to use in API call. */
     private String url;
+
+    /** Arrival time for train. */
     private String arrivalTime;
+
+    /** Where the train is headed. */
     private String towards;
+
+    /** Name of the train line. */
     private String lineColor;
+
+    /** String to record and display the parsed data from jsonString. */
     private String shortString = "";
+
+    /** Causes the app to print the error message if the API call causes an error. */
     private boolean causedError = false;
+
+    /** Json parser. */
     JsonParser parser;
+
+    /** Json object to store the results. */
     JsonObject result;
+
+    /** Starting Json object that contains all of the data. */
     JsonObject ctatt;
+
+    /** Json array with all of the train data in it. */
     JsonArray eta;
 
     @Override
@@ -66,6 +90,13 @@ public class MainActivity extends AppCompatActivity {
             shortString = "";
         });
     }
+
+    /**
+     * Function to make the API call.
+     *
+     * @param requestQueue RequestQueue to make the API call
+     * @param url url to use in API call
+     */
     public void process(RequestQueue requestQueue, String url) {
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override

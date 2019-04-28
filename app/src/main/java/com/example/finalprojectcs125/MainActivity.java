@@ -15,14 +15,27 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
+
+    private TextView mTextViewResult;
 
     private RequestQueue requestQueue;
 
     private String jsonString = null;
 
     private String url;
+
+    private String arrivalTime;
+
+    private String shortString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,14 +69,32 @@ public class MainActivity extends AppCompatActivity {
         });
         ((Button) findViewById(R.id.button)).setOnClickListener((v) -> {
             process(requestQueue, url);
-            text.setText(jsonString);
+            text.setText(shortString);
         });
     }
     public void process(RequestQueue requestQueue, String url) {
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+
             @Override
-            public void onResponse(String response) {
-                jsonString = response;
+            public void onResponse(String response){
+                    jsonString = response;
+
+                JsonParser parser = new JsonParser();
+                JsonObject result = parser.parse(response).getAsJsonObject();
+                JsonObject ctatt = result.get("ctatt").getAsJsonObject();
+                JsonArray eta = ctatt.get("eta").getAsJsonArray();
+                JsonObject etaArray = eta.get(2).getAsJsonObject();
+                arrivalTime = etaArray.getAsJsonPrimitive("arrT").
+                        getAsString();
+
+                shortString = arrivalTime.substring(11, 19);
+
+                Integer.parseInt(shortString);
+
+
+
+
+
             }
         }, new Response.ErrorListener() {
             @Override
@@ -71,8 +102,9 @@ public class MainActivity extends AppCompatActivity {
                 jsonString = error.getMessage();
             }
         });
+
         requestQueue.add(stringRequest);
-        //parse jsonString
+        //parse jsonString`
         //get arrival time
     }
 }

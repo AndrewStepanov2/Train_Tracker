@@ -2,8 +2,8 @@
     <string name="app_name">FinalProjectCS125</string>
 
     <string-array name ="locations">
-        <item>Clark/Lake</item>
         <item>Belmont</item>
+        <item>Clark/Lake</item>
 
     </string-array>
 

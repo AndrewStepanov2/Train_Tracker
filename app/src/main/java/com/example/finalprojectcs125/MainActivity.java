@@ -46,11 +46,10 @@ public class MainActivity extends AppCompatActivity {
                 String station = parent.getItemAtPosition(position).toString();
                 if (station.equals("Clark/Lake")) {
                     currentStation = "40380";
+                } else {
+                    currentStation = "41320";
                 }
-                if (station.equals("Belmont")) {
-                    currentStation="41320";
-                }
-                String url = "http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=" + API_KEY + "&mapid=" + currentStation + "&outputType=JSON&max=3";
+                String url = "http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=d37555ccc09141848543ab21e287b560&mapid=40380&outputType=JSON";
                 StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        text.setText("oof");
+                        text.setText(error.getMessage());
                     }
                 });
                 requestQueue.add(stringRequest);

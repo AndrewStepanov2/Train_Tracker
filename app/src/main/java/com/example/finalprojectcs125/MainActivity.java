@@ -72,5 +72,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         requestQueue.add(stringRequest);
+        //parse jsonString
+        //get arrival time
     }
 }

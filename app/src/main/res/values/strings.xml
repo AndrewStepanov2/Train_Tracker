@@ -4,6 +4,30 @@
     <string-array name ="locations">
         <item>Belmont</item>
         <item>Clark/Lake</item>
+        <item>18th</item>
+        <item>35th/Archer</item>
+        <item>35-Bronzeville-IIT</item>
+        <item>43rd</item>
+        <item>47th</item>
+        <item>51st</item>
+        <item>54th/Cermak</item>
+        <item>63rd</item>
+        <item>69th</item>
+        <item>79th</item>
+        <item>87th</item>
+        <item>95th/Dan Ryan</item>
+        <item>Adams/Wabash</item>
+        <item>Addison</item>
+        <item>Argyle</item>
+        <item>Armitage</item>
+        <item>Ashland</item>
+        <item>Austin</item>
+        <item>Berwyn</item>
+        <item>Bryn Mawr</item>
+        <item>California</item>
+        <item>Central</item>
+
+
     </string-array>
 
     <string-array name = "results">

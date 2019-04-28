@@ -79,6 +79,72 @@ public class MainActivity extends AppCompatActivity {
                 if (station.equals("Clark/Lake")) {
                     currentStation = "40380";
                 }
+                if (station.equals("18th")) {
+                    currentStation = "40830";
+                }
+                if (station.equals("35th/Archer")) {
+                    currentStation = "40120";
+                }
+                if (station.equals("35-Bronzeville-IIT")) {
+                    currentStation = "41120";
+                }
+                if (station.equals("43rd")) {
+                    currentStation = "41270";
+                }
+                if (station.equals("47th")) {
+                    currentStation = "41080";
+                }
+                if (station.equals("51st")) {
+                    currentStation = "40130";
+                }
+                if (station.equals("54th/Cermak")) {
+                    currentStation = "40580";
+                }
+                if (station.equals("63rd")) {
+                    currentStation = "40910";
+                }
+                if (station.equals("69th")) {
+                    currentStation = "40990";
+                }
+                if (station.equals("79th")) {
+                    currentStation = "40240";
+                }
+                if (station.equals("87th")) {
+                    currentStation = "41430";
+                }
+                if (station.equals("95th/Dan Ryan")) {
+                    currentStation = "40450";
+                }
+                if (station.equals("Adams/Wabash")) {
+                    currentStation = "40680";
+                }
+                if (station.equals("Addison")) {
+                    currentStation = "41240";
+                }
+                if (station.equals("Argyle")) {
+                    currentStation = "41200";
+                }
+                if (station.equals("Armitage")) {
+                    currentStation = "40660";
+                }
+                if (station.equals("Ashland")) {
+                    currentStation = "40170";
+                }
+                if (station.equals("Austin")) {
+                    currentStation = "41260";
+                }
+                if (station.equals("Berwyn")) {
+                    currentStation = "40340";
+                }
+                if (station.equals("Bryn Mawr")) {
+                    currentStation = "41380";
+                }
+                if (station.equals("California")) {
+                    currentStation = "40570";
+                }
+                if (station.equals("Central")) {
+                    currentStation = "40280";
+                }
                 url = "http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=" + API_KEY + "&mapid=" + currentStation + "&outputType=JSON&max=3";
             }
             @Override

@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 result = parser.parse(jsonString).getAsJsonObject();
                 ctatt = result.get("ctatt").getAsJsonObject();
                 eta = ctatt.get("eta").getAsJsonArray();
-                for (int i = 0; i < eta.size(); i++) {
+                for (int i = 0; i < 3; i++) {
                     JsonObject etaArray = eta.get(i).getAsJsonObject();
                     arrivalTime = etaArray.getAsJsonPrimitive("arrT").
                             getAsString();

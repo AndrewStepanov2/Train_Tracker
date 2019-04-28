@@ -2,8 +2,9 @@
     <string name="app_name">FinalProjectCS125</string>
 
     <string-array name ="locations">
-        <item>One</item>
-        <item>Two</item>
+        <item>Clark/Lake</item>
+        <item>Belmont</item>
+
     </string-array>
 
     <string-array name = "results">

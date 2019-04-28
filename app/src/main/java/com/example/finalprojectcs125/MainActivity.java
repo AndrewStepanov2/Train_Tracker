@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         ((Button) findViewById(R.id.button)).setOnClickListener((v) -> {
             process(requestQueue, url);
             text.setText(shortString);
+            shortString = "";
         });
     }
     public void process(RequestQueue requestQueue, String url) {

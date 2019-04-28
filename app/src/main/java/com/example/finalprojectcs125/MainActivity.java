@@ -19,7 +19,9 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.google.gson.JsonPrimitive;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
 
@@ -34,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private String url;
 
     private String arrivalTime;
+    private String towards;
+    private String lineColor;
 
     private String shortString;
 
@@ -59,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 if (station.equals("Belmont")) {
                     currentStation="41320";
                 }
-                url = "http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=" + API_KEY + "&mapid=" + currentStation + "&outputType=JSON&max=3";
+                url = "http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=" + API_KEY + "&mapid=" + currentStation + "&outputType=JSON&max=6";
                 // get info from API request
                 // display the data from API request
             }
@@ -83,13 +87,45 @@ public class MainActivity extends AppCompatActivity {
                 JsonObject result = parser.parse(response).getAsJsonObject();
                 JsonObject ctatt = result.get("ctatt").getAsJsonObject();
                 JsonArray eta = ctatt.get("eta").getAsJsonArray();
-                JsonObject etaArray = eta.get(2).getAsJsonObject();
-                arrivalTime = etaArray.getAsJsonPrimitive("arrT").
-                        getAsString();
 
-                shortString = arrivalTime.substring(11, 19);
+                for (int i = 0; i < eta.size(); i++) {
+                    JsonObject etaArray = eta.get(i).getAsJsonObject();
+                    arrivalTime = etaArray.getAsJsonPrimitive("arrT").
+                            getAsString();
+                    towards = etaArray.getAsJsonPrimitive("destNm").getAsString();
+                    lineColor = etaArray.getAsJsonPrimitive("rt").getAsString();
+                    if (lineColor.equals("G")) {
+                        lineColor = "Green Line";
+                    }
+                    if (lineColor.equals("Red")) {
+                        lineColor = "Red Line";
+                    }
+                    if (lineColor.equals("Blue")) {
+                        lineColor = "Blue Line";
+                    }
+                    if (lineColor.equals("Brn")) {
+                        lineColor = "Brown Line";
+                    }
+                    if (lineColor.equals("Org")) {
+                        lineColor = "Orange Line";
+                    }
+                    if (lineColor.equals("P")) {
+                        lineColor = "Purple line";
+                    }
+                    if (lineColor.equals("Pink")) {
+                        lineColor = "Pink Line";
+                    }
+                    if (lineColor.equals("Y")) {
+                        lineColor = "Yellow Line";
+                    }
 
-                Integer.parseInt(shortString);
+                    shortString = "Headed To: " + towards + "\n Route: " + lineColor +
+                            "\n Arrival Time: " + arrivalTime.substring(11, 19);
+
+
+                }
+
+
 
 
 

@@ -28,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
     private String lineColor;
     private String shortString = "";
     private boolean causedError = false;
+    JsonParser parser;
+    JsonObject result;
+    JsonObject ctatt;
+    JsonArray eta;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +70,43 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response){
                 jsonString = response;
+                parser = new JsonParser();
+                result = parser.parse(jsonString).getAsJsonObject();
+                ctatt = result.get("ctatt").getAsJsonObject();
+                eta = ctatt.get("eta").getAsJsonArray();
+                for (int i = 0; i < eta.size(); i++) {
+                    JsonObject etaArray = eta.get(i).getAsJsonObject();
+                    arrivalTime = etaArray.getAsJsonPrimitive("arrT").
+                            getAsString();
+                    towards = etaArray.getAsJsonPrimitive("destNm").getAsString();
+                    lineColor = etaArray.getAsJsonPrimitive("rt").getAsString();
+                    if (lineColor.equals("G")) {
+                        lineColor = "Green Line";
+                    }
+                    if (lineColor.equals("Red")) {
+                        lineColor = "Red Line";
+                    }
+                    if (lineColor.equals("Blue")) {
+                        lineColor = "Blue Line";
+                    }
+                    if (lineColor.equals("Brn")) {
+                        lineColor = "Brown Line";
+                    }
+                    if (lineColor.equals("Org")) {
+                        lineColor = "Orange Line";
+                    }
+                    if (lineColor.equals("P")) {
+                        lineColor = "Purple line";
+                    }
+                    if (lineColor.equals("Pink")) {
+                        lineColor = "Pink Line";
+                    }
+                    if (lineColor.equals("Y")) {
+                        lineColor = "Yellow Line";
+                    }
+                    shortString = shortString + "Headed To: " + towards + "\n Route: " + lineColor +
+                            "\n Arrival Time: " + arrivalTime.substring(11, 19) + "\n \n";
+                }
             }
         }, new Response.ErrorListener() {
             @Override
@@ -78,43 +120,6 @@ public class MainActivity extends AppCompatActivity {
             shortString = jsonString;
             causedError = false;
             return;
-        }
-        JsonParser parser = new JsonParser();
-        JsonObject result = parser.parse(jsonString).getAsJsonObject();
-        JsonObject ctatt = result.get("ctatt").getAsJsonObject();
-        JsonArray eta = ctatt.get("eta").getAsJsonArray();
-        for (int i = 0; i < eta.size(); i++) {
-            JsonObject etaArray = eta.get(i).getAsJsonObject();
-            arrivalTime = etaArray.getAsJsonPrimitive("arrT").
-                    getAsString();
-            towards = etaArray.getAsJsonPrimitive("destNm").getAsString();
-            lineColor = etaArray.getAsJsonPrimitive("rt").getAsString();
-            if (lineColor.equals("G")) {
-                lineColor = "Green Line";
-            }
-            if (lineColor.equals("Red")) {
-                lineColor = "Red Line";
-            }
-            if (lineColor.equals("Blue")) {
-                lineColor = "Blue Line";
-            }
-            if (lineColor.equals("Brn")) {
-                lineColor = "Brown Line";
-            }
-            if (lineColor.equals("Org")) {
-                lineColor = "Orange Line";
-            }
-            if (lineColor.equals("P")) {
-                lineColor = "Purple line";
-            }
-            if (lineColor.equals("Pink")) {
-                lineColor = "Pink Line";
-            }
-            if (lineColor.equals("Y")) {
-                lineColor = "Yellow Line";
-            }
-            shortString = shortString + "Headed To: " + towards + "\n Route: " + lineColor +
-                    "\n Arrival Time: " + arrivalTime.substring(11, 19) + "\n";
         }
     }
 }

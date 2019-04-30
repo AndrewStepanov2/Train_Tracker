@@ -2,8 +2,6 @@
     <string name="app_name">FinalProjectCS125</string>
 
     <string-array name ="locations">
-        <item>Belmont</item>
-        <item>Clark/Lake</item>
         <item>18th</item>
         <item>35th/Archer</item>
         <item>35-Bronzeville-IIT</item>
@@ -22,10 +20,97 @@
         <item>Armitage</item>
         <item>Ashland</item>
         <item>Austin</item>
+        <item>Belmont</item>
         <item>Berwyn</item>
         <item>Bryn Mawr</item>
         <item>California</item>
         <item>Central</item>
+        <item>Central Park</item>
+        <item>Cermak-Chinatown</item>
+        <item>Cermak-McCormick Place</item>
+        <item>Chicago</item>
+        <item>Cicero</item>
+        <item>Clark/Division</item>
+        <item>Clark/Lake</item>
+        <item>Clinton</item>
+        <item>Conservatory</item>
+        <item>Cottage Grove</item>
+        <item>Cumberland</item>
+        <item>Damen/Milwaukee</item>
+        <item>Damen</item>
+        <item>Davis</item>
+        <item>Dempster</item>
+        <item>Dempster-Skokie</item>
+        <item>Diversey</item>
+        <item>Division</item>
+        <item>Forest Park</item>
+        <item>Foster</item>
+        <item>Francisco</item>
+        <item>Fullerton</item>
+        <item>Garfield</item>
+        <item>Grand/Milwaukee</item>
+        <item>Grand/State</item>
+        <item>Granville</item>
+        <item>Halsted/63rd</item>
+        <item>Halsted</item>
+        <item>Harlem</item>
+        <item>H. W. Library</item>
+        <item>Harrison</item>
+        <item>Howard</item>
+        <item>Illinois Medical District</item>
+        <item>Indiana</item>
+        <item>Irving Park</item>
+        <item>Jackson/Dearborn</item>
+        <item>Jackson/State</item>
+        <item>Jarvis</item>
+        <item>Jefferson Park</item>
+        <item>Kedzie</item>
+        <item>Kedzie-Homan</item>
+        <item>Kimball</item>
+        <item>King Drive</item>
+        <item>Kostner</item>
+        <item>Lake</item>
+        <item>Laramie</item>
+        <item>LaSalle</item>
+        <item>LaSalle/Van Buren</item>
+        <item>Lawrence</item>
+        <item>Linden</item>
+        <item>Logan Square</item>
+        <item>Loyola</item>
+        <item>Main</item>
+        <item>Merchandise Mart</item>
+        <item>Midway</item>
+        <item>Monroe</item>
+        <item>Montrose</item>
+        <item>Morgan</item>
+        <item>Morse</item>
+        <item>North/Clybourn</item>
+        <item>Noyes</item>
+        <item>Oak Park</item>
+        <item>Oakton-Skokie</item>
+        <item>Pualina</item>
+        <item>Polk</item>
+        <item>Pulaski</item>
+        <item>Quincy/Wells</item>
+        <item>Racine</item>
+        <item>Ridgeland</item>
+        <item>Rockwell</item>
+        <item>Roosevelt</item>
+        <item>Rosemont</item>
+        <item>Sedgwick</item>
+        <item>Sheridan</item>
+        <item>South Blvd</item>
+        <item>Southport</item>
+        <item>Sox-35th</item>
+        <item>State/Lake</item>
+        <item>Thorndale</item>
+        <item>UIC-Halsted</item>
+        <item>Washington</item>
+        <item>Washington/Wabash</item>
+        <item>Washington/Wells</item>
+        <item>Wellington</item>
+        <item>Western</item>
+        <item>Wilson</item>
 
 
     </string-array>

@@ -81,8 +81,10 @@ public class MainActivity extends AppCompatActivity {
                     currentStation = "41120";
                 } else if (station.equals("43rd")) {
                     currentStation = "41270";
-                } else if (station.equals("47th")) {
+                } else if (station.equals("47th Green Line")) {
                     currentStation = "41080";
+                } else if (station.equals("47th Red Line")) {
+                    currentStation = "41230";
                 } else if (station.equals("51st")) {
                     currentStation = "40130";
                 } else if (station.equals("54th/Cermak")) {
@@ -99,18 +101,28 @@ public class MainActivity extends AppCompatActivity {
                     currentStation = "40450";
                 } else if (station.equals("Adams/Wabash")) {
                     currentStation = "40680";
-                } else if (station.equals("Addison")) {
+                } else if (station.equals("Addison Blue Line")) {
                     currentStation = "41240";
+                } else if (station.equals("Addison Brown Line")) {
+                    currentStation = "41440";
+                } else if (station.equals("Addison Red Line")) {
+                    currentStation = "41420";
                 } else if (station.equals("Argyle")) {
                     currentStation = "41200";
                 } else if (station.equals("Armitage")) {
                     currentStation = "40660";
-                } else if (station.equals("Ashland")) {
+                } else if (station.equals("Ashland Green and Pink Lines")) {
                     currentStation = "40170";
-                } else if (station.equals("Austin")) {
+                } else if (station.equals("Ashland Orange Line")) {
+                    currentStation = "41060";
+                } else if (station.equals("Austin Blue Line")) {
+                    currentStation = "40010";
+                } else if (station.equals("Austin Green Line")) {
                     currentStation = "41260";
-                } else if (station.equals("Belmont")) {
+                } else if (station.equals("Belmont Red Brown Purple Lines")) {
                     currentStation="41320";
+                } else if (station.equals("Belmont Blue Line")) {
+                    currentStation="40060";
                 } else if (station.equals("Berwyn")) {
                     currentStation = "40340";
                 } else if (station.equals("Bryn Mawr")) {
@@ -177,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
                     currentStation = "41130";
                 } else if (station.equals("Harlem")) {
                     currentStation = "40980";
-                } else if (station.equals("H. W. Library")) {
+                } else if (station.equals("Harold W. Library")) {
                     currentStation = "40850";
                 } else if (station.equals("Harrison")) {
                     currentStation = "41490";
@@ -245,6 +257,8 @@ public class MainActivity extends AppCompatActivity {
                     currentStation = "40180";
                 } else if (station.equals("Oakton-Skokie")) {
                     currentStation = "41680";
+                } else if (station.equals("O hare")) {
+                    currentStation = "40890";
                 } else if (station.equals("Pualina")) {
                     currentStation = "41310";
                 } else if (station.equals("Polk")) {

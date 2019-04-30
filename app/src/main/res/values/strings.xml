@@ -6,7 +6,8 @@
         <item>35th/Archer</item>
         <item>35-Bronzeville-IIT</item>
         <item>43rd</item>
-        <item>47th</item>
+        <item>47th Green Line</item>
+        <item>47th Red Line</item>
         <item>51st</item>
         <item>54th/Cermak</item>
         <item>63rd</item>
@@ -15,12 +16,17 @@
         <item>87th</item>
         <item>95th/Dan Ryan</item>
         <item>Adams/Wabash</item>
-        <item>Addison</item>
+        <item>Addison Blue Line</item>
+        <item>Addison Brown Line</item>
+        <item>Addison Red Line</item>
         <item>Argyle</item>
         <item>Armitage</item>
-        <item>Ashland</item>
-        <item>Austin</item>
-        <item>Belmont</item>
+        <item>Ashland Green and Pink Lines</item>
+        <item>Ashland Orange Line</item>
+        <item>Austin Blue Line</item>
+        <item>Austin Green Line</item>
+        <item>Belmont Red Brown Purple Lines</item>
+        <item>Belmont Blue Line</item>
         <item>Berwyn</item>
         <item>Bryn Mawr</item>
         <item>California</item>
@@ -54,7 +60,7 @@
         <item>Halsted/63rd</item>
         <item>Halsted</item>
         <item>Harlem</item>
-        <item>H. W. Library</item>
+        <item>Harold W. Library</item>
         <item>Harrison</item>
         <item>Howard</item>
         <item>Illinois Medical District</item>
@@ -88,6 +94,7 @@
         <item>Noyes</item>
         <item>Oak Park</item>
         <item>Oakton-Skokie</item>
+        <item>O hare</item>
         <item>Pualina</item>
         <item>Polk</item>
         <item>Pulaski</item>

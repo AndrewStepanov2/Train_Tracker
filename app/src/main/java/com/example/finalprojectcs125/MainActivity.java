@@ -127,26 +127,42 @@ public class MainActivity extends AppCompatActivity {
                     currentStation = "40340";
                 } else if (station.equals("Bryn Mawr")) {
                     currentStation = "41380";
-                } else if (station.equals("California")) {
+                } else if (station.equals("California Pink Line")) {
+                    currentStation = "40440";
+                } else if (station.equals("California Green Line")) {
+                    currentStation = "41360";
+                } else if (station.equals("California Blue Line")) {
                     currentStation = "40570";
-                } else if (station.equals("Central")) {
-                    currentStation = "40280";
                 } else if (station.equals("Central Park")) {
                     currentStation = "40780";
+                } else if (station.equals("Central Green Line")) {
+                    currentStation = "40280";
+                } else if (station.equals("Central Purple Line")) {
+                    currentStation = "41250";
                 } else if (station.equals("Cermak-Chinatown")) {
                     currentStation = "41000";
                 } else if (station.equals("Cermak-McCormick Place")) {
                     currentStation = "41690";
-                } else if (station.equals("Chicago")) {
+                } else if (station.equals("Chicago Blue Line")) {
                     currentStation = "41410";
-                } else if (station.equals("Cicero")) {
+                } else if (station.equals("Chicago Brown Line")) {
+                    currentStation = "40710";
+                } else if (station.equals("Chicago Red Line")) {
+                    currentStation = "41450";
+                } else if (station.equals("Cicero Pink Line")) {
+                    currentStation = "40420";
+                } else if (station.equals("Cicero Blue Line")) {
                     currentStation = "40970";
+                } else if (station.equals("Cicero Green Line")) {
+                    currentStation = "40480";
                 } else if (station.equals("Clark/Division")) {
                     currentStation = "40630";
                 } else if (station.equals("Clark/Lake")) {
                     currentStation = "40380";
-                } else if (station.equals("Clinton")) {
+                } else if (station.equals("Clinton Blue Line")) {
                     currentStation = "40430";
+                } else if (station.equals("Clinton Green Line")) {
+                    currentStation = "41160";
                 } else if (station.equals("Conservatory")) {
                     currentStation = "41670";
                 } else if (station.equals("Cottage Grove")) {
@@ -155,8 +171,12 @@ public class MainActivity extends AppCompatActivity {
                     currentStation = "40230";
                 } else if (station.equals("Damen/Milwaukee")) {
                     currentStation = "40590";
-                } else if (station.equals("Damen")) {
+                } else if (station.equals("Damen Brown Line")) {
                     currentStation = "40090";
+                } else if (station.equals("Damen Pink Line")) {
+                    currentStation = "40210";
+                } else if (station.equals("Damen Blue Line")) {
+                    currentStation = "40590";
                 } else if (station.equals("Davis")) {
                     currentStation = "40050";
                 } else if (station.equals("Dempster")) {
@@ -175,8 +195,10 @@ public class MainActivity extends AppCompatActivity {
                     currentStation = "40870";
                 } else if (station.equals("Fullerton")) {
                     currentStation = "41220";
-                } else if (station.equals("Garfield")) {
+                } else if (station.equals("Garfield Green Line")) {
                     currentStation = "40510";
+                } else if (station.equals("Garfield Red Line")) {
+                    currentStation = "41170";
                 } else if (station.equals("Grand/Milwaukee")) {
                     currentStation = "40490";
                 } else if (station.equals("Grand/State")) {
@@ -187,8 +209,12 @@ public class MainActivity extends AppCompatActivity {
                     currentStation = "40940";
                 } else if (station.equals("Halsted")) {
                     currentStation = "41130";
-                } else if (station.equals("Harlem")) {
+                } else if (station.equals("Harlem Blue Line")) {
                     currentStation = "40980";
+                } else if (station.equals("Harlem Green Line")) {
+                    currentStation = "40020";
+                } else if (station.equals("Harlem O hare Blue Line")) {
+                    currentStation = "40750";
                 } else if (station.equals("Harold W. Library")) {
                     currentStation = "40850";
                 } else if (station.equals("Harrison")) {
@@ -199,8 +225,10 @@ public class MainActivity extends AppCompatActivity {
                     currentStation = "40810";
                 } else if (station.equals("Indiana")) {
                     currentStation = "40300";
-                } else if (station.equals("Irving Park")) {
+                } else if (station.equals("Irving Park Blue Line")) {
                     currentStation = "40550";
+                } else if (station.equals("Irving Park Brown Line")) {
+                    currentStation = "41460";
                 } else if (station.equals("Jackson/Dearborn")) {
                     currentStation = "40070";
                 } else if (station.equals("Jackson/State")) {
